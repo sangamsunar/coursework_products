@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PRODUCTS</title>
+    <style>
+      body{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      /*css of image with overlaying text*/
+      .head-img-container{
+        height: 250px;
+        padding-bottom: 10px;
+      }
+      .head-img{
+        position:absolute;
+        width:100%;
+        height: 250px;
+        object-fit:cover;
+      }
+
+      .img-nav{
+        position:relative;
+        color:white;
+        display:grid;
+        place-items:center;
+        top: 50px;
+      }
+      .mini-nav{
+        display: flex;
+        gap: 10px;
+      }
+
+      /*css of product navigation section*/
+      .product-nav{
+        cursor:pointer;
+      }
+      .product-nav-bar, .product_nav_name{
+        display:flex;
+        justify-content:center;
+
+      }
+      .product-nav-bar{
+        background-color:rgb(255, 245, 245); 
+        padding: 10px;
+      }
+      .nav-img-container{
+        padding:10px;
+        border-width: 50px;
+        border-color:black;
+      }
+      .product_nav_img{
+        height: 120px;
+        border-radius: 50%;
+        border-radius:50%;
+        object-fit:cover;
+        border: 3px solid transparent;
+        transition: 0.5s;
+        
+      }
+      .product-nav:hover .product_nav_img{
+        border-color:rgb(101, 183, 65);
+      }
+      .product-nav{
+        /*background: rgba(0, 128, 0, 0.64);*/
+      }
+      .product_nav_name:action{
+        margin: 0;
+      }
+      .prt-details{
+        align-items: center;
+      }
+
+      /*css of 
+      product
+       section*/
+      .container{
+        max-width: 350px;
+        height: 450px;
+        display:grid;
+        place-items:center;
+        margin-top: 30px;
+        padding: 10px 0px;
+        border-bottom-right-radius: 10px; 
+        border-bottom-left-radius: 10px;
+        cursor:pointer;
+      }
+      .container, .prt_price{
+        transition: 0.5s; 
+      }
+      .container:hover{
+        background-color:rgb(101, 183, 65);
+      }
+
+      .prt_img{
+      width: 300px;
+      height: 350px;
+      object-fit:cover; 
+      }
+      .prt-details{
+        text-align:center;
+      }
+      .prt_name, .prt_price{
+        margin:0;
+        
+      }
+      .prt_name{
+        font-size: 25px;
+        font-weight:bold;
+        margin: 10px;
+      }
+      
+      .prt_price{
+        display:inline-block;
+        font-size: 20px;
+        padding: 12px 50px ;
+        color:white;
+        font-weight: bolder;
+        background-color:rgb(101, 183, 65);
+        border-radius: 8px;
+      }
+      .container:hover .prt_price{
+        padding: 12px 80px;
+      }
+      .container:hover .prt_price{
+        background-color:white;
+        color: green;
+      }
+      .prt_price:active{
+        background-color:black;
+        color: green;
+      }  
+    </style>
+  </head>
+
+  <body>
+    <div class="head-img-container">
+      <img src="resources/photos/veg_head.jpg" class="head-img">
+      <div class="img-container">
+        <div class="img-nav">
+          <p style="display:flex;
+          font-size: 40px;
+          font-weight: bold;
+          ">PRODUCTS</p>
+          <div class="mini-nav" style="
+           font-size: 20px;
+          ">
+            <a href="" style="
+            color:white;
+            text-decoration:none;
+            ">
+            <p class="home_nav" style="
+            color:rgb(101, 183, 65);
+            ">Home ></p></a>
+            <p>Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--product navigation-->
+    <div class="product-nav-bar">
+      <div class="product-nav" >
+        <div class="nav-img-container">
+          <img src="resources/photos/all-items-nav.png" class="product_nav_img">
+        </div>
+        <p class="product_nav_name">All Items</p>
+      </div>
+
+      <div class="product-nav" >
+        <div class="nav-img-container">
+          <img src="resources/photos/drink-nav.png" class="product_nav_img">
+        </div>
+        <p class="product_nav_name">Drinks</p>
+      </div>
+      <div class="product-nav" >
+        <div class="nav-img-container">
+          <img src="resources/photos/snacks.png" class="product_nav_img" style="
+            height: 120px;
+            width: 120px;
+            ">
+        </div>
+        <p class="product_nav_name">Snacks</p>
+      </div>
+      <div class="product-nav" >
+        <div class="nav-img-container">
+          <img src="resources/photos/drink-nav.png" class="product_nav_img">
+        </div>
+        <p class="product_nav_name">Vegetables</p>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+    <div class="container-grid" style="
+    background-color: rgb(255, 237, 222);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items:center;
+    ">
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/cheetos.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/doritos.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/lays.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/oreo.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/oreo.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/oreo.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/oreo.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+      <div class="container">
+        <img class="prt_img" src="resources/photos/chips/oreo.png"> 
+        <div class="prt-details">
+          <p class="prt_name">2pm STIX</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+    </div>
+
+      <!--This is a product section
+      <div class="container-grid">
+        <div class="container">
+          <img src="resources/photos/chips/uncle-chips.png" class="prt_img">
+          <div class="prt-details">
+            <p class="prt_name">Uncle Chipps</p>
+            <div class="prt-pricing">
+              <p class="dis_price"> <del>$45</del>  
+              <p class="prt_price">$35</p>
+            </div>
+          </div>
+        </div>  
+      </div>-->
+    
+  </body>
+</html>
